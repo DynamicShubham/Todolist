@@ -81,6 +81,7 @@ function App() {
               {todos.map(item => {
                 return <div key={item.id} className={item.isCompleted ? "todo flex w-3/4 justify-between my-1 line-through" : "todo flex w-3/4 justify-between my-1"}>
                 <div className="flex gap">
+                  <label name="checkbox"> </label>
                   <input type="checkbox" onChange={handleCheckbox} name={item.id} checked={item.isCompleted} id="" className="mx-1" />
                   <div>{item.todo}</div>
                 </div>
